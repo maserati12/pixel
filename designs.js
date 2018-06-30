@@ -10367,13 +10367,10 @@ return jQuery;
 // Select size input
 // When size is submitted by the user, call makeGrid()
 $(function(){
-	$('input').keydown(function(){
-		$(this).data("the_previous_input_value", $(this).val());
-	});
 	$('input').keyup(function(){
 		if($(this).val() <= 15); //This is for a good performance
 		else
-			$(this).val($(this).data("the_previous_input_value"));		
+			$(this).val(null);		
 	});
 });
 
