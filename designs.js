@@ -10394,8 +10394,7 @@ $('.button').click(function makeGrid(event){
 $('table').on('click', '#cell', function(event){
 	var original  = $('#colorPicker').val();
 	$(this).css('background-color', original);
-})
-// Toggle the grid after creating the pixel art..Take a screenshot use snipping tool...
+});
 
 
 
